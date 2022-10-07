@@ -8,13 +8,13 @@ body {
   overflow: hidden;
   background-image: url("images/background.jpg");
   background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.spin{
-    width: 300px;
+.spin {
+  width: 300px;
 }
-.spin:hover{
+.spin:hover {
   display: flex;
   width: 300px;
   background-color: none;
@@ -22,111 +22,151 @@ background-size: cover;
   animation-name: spin;
   animation-duration: 4s;
 }
-.codeweb{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+.codeweb {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
-.socialimgs{
-    width: 50px;
-    height: 50px;
+.socialimgs {
+  width: 50px;
+  height: 50px;
 }
-.topleft{
-    display: flex;
-    position: absolute;
-    left: 20%;
-    top: 30%;
+.topleft {
+  display: flex;
+  position: absolute;
+  left: 20%;
+  top: 30%;
 }
-.topright{
-    display: flex;
-    position: absolute;
-    right: 20%;
-    top: 30%;
+.topright {
+  display: flex;
+  position: absolute;
+  right: 20%;
+  top: 30%;
 }
-.bottomleft{
-    display: flex;
-    position: absolute;
-    left: 20%;
-    bottom: 40%;
+.bottomleft {
+  display: flex;
+  position: absolute;
+  left: 20%;
+  bottom: 40%;
 }
-.bottomright{
-    display: flex;
-    position: absolute;
-    right: 20%;
-    bottom: 40%;
+.bottomright {
+  display: flex;
+  position: absolute;
+  right: 20%;
+  bottom: 40%;
 }
-.cdn{
-    background-color: rgb(243, 173, 42);
-    border-radius: 50%;
+.cdn {
+  background-color: rgb(243, 173, 42);
+  border-radius: 50%;
 }
-.cdn:active{
-    background-color: blueviolet;
-    box-shadow: 6px 6px 0 black;
+.cdn:active {
+  background-color: blueviolet;
+  box-shadow: 6px 6px 0 black;
 }
-.insta{
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    border-radius: 10px;
+.cdn:hover {
+  animation: enlarge 2s;
 }
-.insta:active{
-    background: blueviolet;
-    box-shadow: 6px 6px 0 black;
+.insta {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  border-radius: 10px;
 }
-.insta:hover{
-    background: blueviolet;
-    box-shadow: 6px 6px 0 black;
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+.insta:active {
+  background: blueviolet;
+  box-shadow: 6px 6px 0 black;
 }
-.twitter{
-    background-color: lightskyblue;
-    border-radius: 10px;
+.insta:hover {
+  background: blueviolet;
+  box-shadow: 6px 6px 0 black;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
-.twitter:active{
-    background-color: blueviolet;
-    box-shadow: 6px 6px 0 black;
+.twitter {
+  background-color: lightskyblue;
+  border-radius: 10px;
 }
-.twitter:hover{
-    animation: fadeOut 2s;
+.twitter:active {
+  background-color: blueviolet;
+  box-shadow: 6px 6px 0 black;
 }
-.facebook{
-    background-color: blue;
-    border-radius: 10px;
+.twitter:hover {
+  animation: fadeOut 2s;
 }
-.facebook:active{
-    background-color: blueviolet;
-    box-shadow: 6px 6px 0 black;
+.facebook {
+  background-color: blue;
+  border-top-left-radius: 10px;
 }
-.facebook:hover{
-    animation-name: drip;
-    animation-duration: 4s;
+.facebook:active {
+  background-color: blueviolet;
+  box-shadow: 6px 6px 0 black;
+}
+.facebook:hover {
+  animation-name: drip;
+  animation-duration: 4s;
 }
 @keyframes drip {
-    0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
-    40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
-    100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   }
-  .drip {
-    transform-origin: 50% 50%;
-    animation: jump .5s linear alternate infinite;
+  40% {
+    transform: translate3d(0, 30%, 0) scale3d(0.7, 1.5, 1);
   }
+  100% {
+    transform: translate3d(0, 100%, 0) scale3d(1.5, 0.7, 1);
+  }
+}
+.drip {
+  transform-origin: 50% 50%;
+  animation: jump 0.5s linear alternate infinite;
+}
 
 @keyframes fadeOut {
-  from {
-  	opacity: 1;
+  0% {
+    opacity: 1;
   }
-  to {
- 	opacity: 0;
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .fade-out {
-	animation: fadeOut 2s;
-  	opacity: 0;
+  animation: fadeOut 2s;
+  opacity: 0;
 }
-
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
 @keyframes spin {
   0% {
     background-color: white;
@@ -139,15 +179,37 @@ background-size: cover;
   }
 }
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
   }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
