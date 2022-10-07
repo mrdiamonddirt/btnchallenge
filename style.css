@@ -16,15 +16,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.background{
+    position: absolute;
+    width: 100vw;
+    bottom: 59%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: ;
+}
 .spin {
     position: relative;
-    transform: translate(0px, -35px);
+    top: -35px;
     /* margin-left: auto; */
     /* margin-right: auto; */
   width: 300px;
+  z-index: 9;
 }
 .spin:hover {
-  display: flex;
   width: 300px;
   background-color: none;
   /* border-radius: 10%; */
@@ -195,6 +203,8 @@ body {
   0% {
     background-color: white;
     box-shadow: 6px 6px 0 darkgrey;
+    transform: rotate(0deg);
+    translate(0px, -35px)
   }
   100% {
     background-color: whitesmoke;
