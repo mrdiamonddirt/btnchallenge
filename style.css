@@ -203,7 +203,7 @@ body {
     background-color: white;
     box-shadow: 6px 6px 0 darkgrey;
     transform: rotate(0deg);
-    translate(0px, -35px);
+    translate:(0px, -35px);
   }
   100% {
     background-color: white;
@@ -322,11 +322,9 @@ body {
     font-family: "Open Sans";
     color: transparent;
     position: absolute;
-    top: 25%;
-    left: 30%;
     display: block;
     letter-spacing: -15px;
-    transform: rotate(-10deg) skew(-20deg);
+    transform: rotate(-10deg) skew(-20deg) translateX(-80px) translateY(-120px);
     z-index: 22;
   }
   .new > .letter {
