@@ -89,6 +89,9 @@ background-size: cover;
     background-color: blueviolet;
     box-shadow: 6px 6px 0 black;
 }
+.twitter:hover{
+    animation: fadeOut 2s;
+}
 .facebook{
     background-color: blue;
     border-radius: 10px;
@@ -110,6 +113,20 @@ background-size: cover;
     transform-origin: 50% 50%;
     animation: jump .5s linear alternate infinite;
   }
+
+@keyframes fadeOut {
+  from {
+  	opacity: 1;
+  }
+  to {
+ 	opacity: 0;
+  }
+}
+.fade-out {
+	animation: fadeOut 2s;
+  	opacity: 0;
+}
+
 @keyframes spin {
   0% {
     background-color: white;
