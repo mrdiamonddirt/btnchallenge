@@ -6,7 +6,7 @@ body {
   background-color: aqua;
   height: 100vmin;
   overflow: hidden;
-  background-image: url("/buttonchallenge/images/background.jpg");
+  background-image: url("images/background.jpg");
   background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
