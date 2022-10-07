@@ -233,8 +233,3 @@ background-size: cover;
       filter:hue-rotate(72deg)contrast(1.5);
     } 
   }
-  
-  .a {animation:a 3s infinite;}
-  .b {animation:b 3s infinite;}
-  .c {animation:c 3s infinite;}
-  .d {animation:d 3s infinite;}
