@@ -19,10 +19,9 @@ body {
 .background{
     position: absolute;
     width: 100vw;
-    bottom: 59%;
+    bottom: 54%;
     left: 50%;
     transform: translateX(-50%);
-    transform: ;
 }
 .spin {
     position: relative;
@@ -30,7 +29,7 @@ body {
     /* margin-left: auto; */
     /* margin-right: auto; */
   width: 300px;
-  z-index: 9;
+  z-index: 101;
 }
 .spin:hover {
   width: 300px;
@@ -204,10 +203,10 @@ body {
     background-color: white;
     box-shadow: 6px 6px 0 darkgrey;
     transform: rotate(0deg);
-    translate(0px, -35px)
+    translate(0px, -35px);
   }
   100% {
-    background-color: whitesmoke;
+    background-color: white;
     box-shadow: 6px 6px 0 black;
     transform: rotate(360deg);
   }
@@ -304,17 +303,17 @@ body {
   }
    
   .triangle {
-    z-index: 0;
     position: absolute;
     margin: auto;
     left: 0;
     right: 0;
     width: 0;
     height: 0;
-    border-left: 200px solid transparent;
-    border-right: 250px solid transparent;
+    border-left: 250px solid transparent;
+    border-right: 220px solid transparent;
     border-bottom: 200px solid rgba(5, 5, 5, 0.33);
-    transform: rotate(15deg);
+    transform: rotate(20deg);
+    top: 25%;
   }
    
   .new {
@@ -322,12 +321,13 @@ body {
     text-transform: uppercase;
     font-family: "Open Sans";
     color: transparent;
-    position: relative;
+    position: absolute;
+    top: 25%;
+    left: 30%;
     display: block;
     letter-spacing: -15px;
     transform: rotate(-10deg) skew(-20deg);
-    margin-left: -100px;
-    margin-bottom: -36px;
+    z-index: 22;
   }
   .new > .letter {
     -webkit-text-stroke: 2px #F4C6F4;
@@ -382,14 +382,15 @@ body {
   }
    
   .wave {
-    position: relative;
-    z-index: 100;
+    position: absolute;
+    z-index: 10;
     font-family: "OutRun", "Helvetica", sans-serif;
     font-size: 3.8em;
     color: #FA26F7;
     text-transform: uppercase;
     letter-spacing: -10px;
-    transform: rotate(-3deg) skew(-3deg);
+    top: 45%;
+    transform: rotate(-3deg) skew(-3deg) translate(50px);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
   }
